@@ -14,7 +14,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet var password: UITextField!
     @IBOutlet var confirm: UITextField!
     @IBOutlet var phone: UITextField!
-    @IBOutlet var clear: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +26,10 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func clearInput(_ sender: AnyObject) {
-        self.username.text = " "
-        self.password.text = " "
-        self.confirm.text = " "
-        self.phone.text = " "
+    @IBAction func clearInput(_ sender: AnyObject) {        username.text = " "
+        password.text = " "
+        confirm.text = " "
+        phone.text = " "
     }
     
 }
