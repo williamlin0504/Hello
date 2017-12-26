@@ -10,6 +10,12 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet var username: UITextField!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var confirm: UITextField!
+    @IBOutlet var phone: UITextField!
+    @IBOutlet var clear: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +27,11 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func clearInput(_ sender: AnyObject) {
+        self.username.text = " "
+        self.password.text = " "
+        self.confirm.text = " "
+        self.phone.text = " "
     }
-    */
-
+    
 }
