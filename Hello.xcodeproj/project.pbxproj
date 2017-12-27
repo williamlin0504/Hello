@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741589BD1FF3AEAA00BFFCE9 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589BC1FF3AEAA00BFFCE9 /* MainPageViewController.swift */; };
+		741589BF1FF3AF3900BFFCE9 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589BE1FF3AF3900BFFCE9 /* DateViewController.swift */; };
+		741589C11FF3AFCC00BFFCE9 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589C01FF3AFCC00BFFCE9 /* LocationViewController.swift */; };
+		741589C31FF3B01C00BFFCE9 /* AttractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589C21FF3B01C00BFFCE9 /* AttractionViewController.swift */; };
+		741589C51FF3B04B00BFFCE9 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589C41FF3B04B00BFFCE9 /* FoodViewController.swift */; };
+		741589C71FF3B09100BFFCE9 /* FinishiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589C61FF3B09100BFFCE9 /* FinishiViewController.swift */; };
+		741589C91FF3B0B600BFFCE9 /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589C81FF3B0B600BFFCE9 /* MyScheduleViewController.swift */; };
+		741589CB1FF3B0DB00BFFCE9 /* HotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741589CA1FF3B0DB00BFFCE9 /* HotViewController.swift */; };
 		97608F161FE1490300D3818B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97608F141FE1490300D3818B /* Main.storyboard */; };
 		976B10E11FDFF44F00A45A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B10E01FDFF44F00A45A0F /* AppDelegate.swift */; };
 		976B10E31FDFF44F00A45A0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B10E21FDFF44F00A45A0F /* ViewController.swift */; };
@@ -36,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		741589BC1FF3AEAA00BFFCE9 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		741589BE1FF3AF3900BFFCE9 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		741589C01FF3AFCC00BFFCE9 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		741589C21FF3B01C00BFFCE9 /* AttractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionViewController.swift; sourceTree = "<group>"; };
+		741589C41FF3B04B00BFFCE9 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		741589C61FF3B09100BFFCE9 /* FinishiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishiViewController.swift; sourceTree = "<group>"; };
+		741589C81FF3B0B600BFFCE9 /* MyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
+		741589CA1FF3B0DB00BFFCE9 /* HotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotViewController.swift; sourceTree = "<group>"; };
 		97608F151FE1490300D3818B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		976B10DD1FDFF44F00A45A0F /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976B10E01FDFF44F00A45A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +125,14 @@
 				976B10EC1FDFF44F00A45A0F /* Info.plist */,
 				97889D661FE92B99009E41D2 /* LoginViewController.swift */,
 				97889D681FE92E74009E41D2 /* RegisterViewController.swift */,
+				741589BC1FF3AEAA00BFFCE9 /* MainPageViewController.swift */,
+				741589BE1FF3AF3900BFFCE9 /* DateViewController.swift */,
+				741589C01FF3AFCC00BFFCE9 /* LocationViewController.swift */,
+				741589C21FF3B01C00BFFCE9 /* AttractionViewController.swift */,
+				741589C41FF3B04B00BFFCE9 /* FoodViewController.swift */,
+				741589C61FF3B09100BFFCE9 /* FinishiViewController.swift */,
+				741589C81FF3B0B600BFFCE9 /* MyScheduleViewController.swift */,
+				741589CA1FF3B0DB00BFFCE9 /* HotViewController.swift */,
 			);
 			path = Hello;
 			sourceTree = "<group>";
@@ -265,9 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741589CB1FF3B0DB00BFFCE9 /* HotViewController.swift in Sources */,
+				741589C11FF3AFCC00BFFCE9 /* LocationViewController.swift in Sources */,
+				741589C31FF3B01C00BFFCE9 /* AttractionViewController.swift in Sources */,
+				741589BD1FF3AEAA00BFFCE9 /* MainPageViewController.swift in Sources */,
 				97889D671FE92B99009E41D2 /* LoginViewController.swift in Sources */,
+				741589C51FF3B04B00BFFCE9 /* FoodViewController.swift in Sources */,
 				976B10E31FDFF44F00A45A0F /* ViewController.swift in Sources */,
 				976B10E11FDFF44F00A45A0F /* AppDelegate.swift in Sources */,
+				741589C91FF3B0B600BFFCE9 /* MyScheduleViewController.swift in Sources */,
+				741589C71FF3B09100BFFCE9 /* FinishiViewController.swift in Sources */,
+				741589BF1FF3AF3900BFFCE9 /* DateViewController.swift in Sources */,
 				97889D691FE92E74009E41D2 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
