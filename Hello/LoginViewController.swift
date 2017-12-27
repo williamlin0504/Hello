@@ -21,6 +21,11 @@ class LoginViewController: UIViewController , UITextFieldDelegate{
         self.user.delegate = self
         
         self.password.delegate = self
+        
+        let center: Notification = NotificationCenter.default
+        center.addObserver(self, selector: #selector(keyboardDidShow(notification:)),name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        center.addObserver(self, selector: #selector(keyboardWillHide(notification:)),name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+  
         // Do any additional setup after loading the view.
     }
     
@@ -45,6 +50,20 @@ class LoginViewController: UIViewController , UITextFieldDelegate{
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTextField = textField
+    }
+    
+    func keyboardDidShow(notifiction: Notification){
+        let info:NSDictionary = notification.userInfo! as NSDictionary
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        let keyboardY = self.view.frame.size.height - keyboardSize.height
+        
+        let editingTextFieldY:CGFloat! = self.activeTextField?.frame.origin.y
+        
+        if editingTextFieldY > keyboardY - 60 {
+            UIView.animate(withDuration: 0.25, delay: 0.0, options:UIViewAnimationOptions.curveEaseIn, animations: {
+                self.view.frame = CGRect(x: 0, y: self.view.frame.origin.y-(editingTextFieldY! - (keyboardY - 60)),width: self.view.bounds.width, height: self.view.bounds.height)
+                },completion: nil)
+        }
     }
     
     func keyboardWillHide(notifiction: Notification){
