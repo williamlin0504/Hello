@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="52G-lK-Ppx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="52G-lK-Ppx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -183,7 +183,7 @@
         <!--首頁-->
         <scene sceneID="RbR-Za-gSA">
             <objects>
-                <viewController title="首頁" id="YT8-P0-oXA" sceneMemberID="viewController">
+                <viewController title="首頁" id="YT8-P0-oXA" customClass="MainPageViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dpM-tc-AUf"/>
                         <viewControllerLayoutGuide type="bottom" id="YoL-0S-yUf"/>
@@ -263,7 +263,7 @@
         <!--建立行程-->
         <scene sceneID="fz8-AK-xNM">
             <objects>
-                <viewController title="建立行程" id="b2J-SZ-ccm" sceneMemberID="viewController">
+                <viewController title="建立行程" id="b2J-SZ-ccm" customClass="DateViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qGi-h9-8tw"/>
                         <viewControllerLayoutGuide type="bottom" id="lNg-Mj-wdW"/>
@@ -322,7 +322,7 @@
         <!--選擇地點-->
         <scene sceneID="n18-gm-YIq">
             <objects>
-                <viewController title="選擇地點" id="6I0-1X-Qnk" sceneMemberID="viewController">
+                <viewController title="選擇地點" id="6I0-1X-Qnk" customClass="LocationViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sys-r8-xmh"/>
                         <viewControllerLayoutGuide type="bottom" id="Lxv-OJ-Yu9"/>
@@ -373,7 +373,7 @@
         <!--選擇景點-->
         <scene sceneID="FNE-f8-JXy">
             <objects>
-                <viewController title="選擇景點" id="55S-77-nzH" sceneMemberID="viewController">
+                <viewController title="選擇景點" id="55S-77-nzH" customClass="AttractionViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YV0-ED-Fp7"/>
                         <viewControllerLayoutGuide type="bottom" id="OBF-YK-BaG"/>
@@ -438,7 +438,7 @@
         <!--想吃的美食-->
         <scene sceneID="m9Y-jX-Q8W">
             <objects>
-                <viewController title="想吃的美食" id="hT7-vV-q9T" sceneMemberID="viewController">
+                <viewController title="想吃的美食" id="hT7-vV-q9T" customClass="FoodViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J9y-C3-9Ot"/>
                         <viewControllerLayoutGuide type="bottom" id="HmG-F6-blB"/>
@@ -485,7 +485,7 @@
         <!--確認行程-->
         <scene sceneID="yeW-cH-wAN">
             <objects>
-                <viewController title="確認行程" id="F3R-lW-UOa" sceneMemberID="viewController">
+                <viewController title="確認行程" id="F3R-lW-UOa" customClass="FinishiViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wLS-YZ-8XX"/>
                         <viewControllerLayoutGuide type="bottom" id="Vec-AC-RSH"/>
@@ -598,7 +598,7 @@
         <!--熱門行程-->
         <scene sceneID="j5K-X5-KCb">
             <objects>
-                <viewController title="熱門行程" id="xkr-jh-iQE" sceneMemberID="viewController">
+                <viewController title="熱門行程" id="xkr-jh-iQE" customClass="HotViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6o9-Dn-KQX"/>
                         <viewControllerLayoutGuide type="bottom" id="bwq-mJ-pX3"/>
@@ -606,15 +606,6 @@
                     <view key="view" contentMode="scaleToFill" id="AEq-Ze-JWf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-iJ-cls">
-                                <rect key="frame" x="166" y="323" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -641,7 +632,7 @@
         <!--我的行程-->
         <scene sceneID="hyH-mw-fBt">
             <objects>
-                <viewController title="我的行程" id="7Ba-zv-Zh7" sceneMemberID="viewController">
+                <viewController title="我的行程" id="7Ba-zv-Zh7" customClass="MyScheduleViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OnD-pD-wjt"/>
                         <viewControllerLayoutGuide type="bottom" id="OH5-Yj-v4E"/>
@@ -668,6 +659,6 @@
         <image name="register" width="44" height="84"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="s7S-QA-p7H"/>
+        <segue reference="hro-Fa-8bn"/>
     </inferredMetricsTieBreakers>
 </document>
